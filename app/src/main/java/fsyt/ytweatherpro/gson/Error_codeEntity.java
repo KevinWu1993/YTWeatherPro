@@ -7,6 +7,7 @@ package fsyt.ytweatherpro.gson;
 public class Error_codeEntity {
     public int error_code;//错误码
     public Error_codeEntity(int error_code){
+        super();
         this.error_code=error_code;
     }
 }
