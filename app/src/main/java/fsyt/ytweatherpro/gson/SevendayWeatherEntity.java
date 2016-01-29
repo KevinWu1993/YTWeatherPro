@@ -4,7 +4,7 @@ package fsyt.ytweatherpro.gson;
  * 未来三天天气实体
  * Created by KevinWu on 2016/1/29.
  */
-public class ThreedayWeatherEntity {
+public class SevendayWeatherEntity {
     public AdayWeather[] weathers=new AdayWeather[7];
 
 
