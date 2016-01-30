@@ -5,9 +5,5 @@ package fsyt.ytweatherpro.gson;
  * Created by KevinWu on 2016/1/29.
  */
 public class ResultEntity {
-    public DataEntity dataEntity;
-    public ResultEntity(DataEntity dataEntity){
-        super();
-        this.dataEntity=dataEntity;
-    }
+    public DataEntity data;
 }

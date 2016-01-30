@@ -34,7 +34,7 @@ public class ExampleUnitTest {
         System.out.println(jsonStr);
         Gson gson=new Gson();
         WeatherEntity w=gson.fromJson(jsonStr,WeatherEntity.class);
-        System.out.println(w.reasonEntity.reason);
+        System.out.println(w.result.data.weather.get(0).info.day.get(1));
     }
 
     private String importStr(){
