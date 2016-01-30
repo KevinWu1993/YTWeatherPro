@@ -17,4 +17,6 @@ A weather app for android phone
 
 就这样。
 
+Gson学习笔记：http://blog.csdn.net/kevinwu93/article/details/50611180
+
 
