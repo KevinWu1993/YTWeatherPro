@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import fsyt.ytweatherpro.gson.WeatherEntity;
+import fsyt.ytweatherpro.gsonEntity.WeatherEntity;
 
 import static org.junit.Assert.*;
 
@@ -34,7 +34,7 @@ public class ExampleUnitTest {
         System.out.println(jsonStr);
         Gson gson=new Gson();
         WeatherEntity w=gson.fromJson(jsonStr,WeatherEntity.class);
-        System.out.println(w.result.data.weather.get(0).info.day.get(1));
+        System.out.println(w.result.data.pm25.pm25.pm10);
     }
 
     private String importStr(){
