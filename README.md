@@ -1,6 +1,7 @@
 # YTWeatherPro
 A weather app for android phone
 ---
+（几乎全力忙于项目《师大+》中，此项目延迟更新）
 也不用半吊子英语了
 
 感觉这几天写代码不在状态，看来是要心血来潮写点东西才能脉动回来
