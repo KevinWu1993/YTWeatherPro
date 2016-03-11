@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 public class ADayWeatherBean {
     private String date;//日期
-    private ArrayList<String> day=new ArrayList<String>();//白天天气信息
+
 
     public String getDate() {
         return date;
@@ -17,21 +17,7 @@ public class ADayWeatherBean {
         this.date = date;
     }
 
-    public ArrayList<String> getDay() {
-        return day;
-    }
 
-    public void setDay(ArrayList<String> day) {
-        this.day = day;
-    }
-
-    public ArrayList<String> getNight() {
-        return night;
-    }
-
-    public void setNight(ArrayList<String> night) {
-        this.night = night;
-    }
 
     public String getWeek() {
         return week;
@@ -49,8 +35,17 @@ public class ADayWeatherBean {
         this.nongli = nongli;
     }
 
-    private ArrayList<String> night=new ArrayList<String>();//夜间天气信息
+    public InfoBean getInfoBean() {
+        return info;
+    }
+
+    public void setInfoBean(InfoBean info) {
+        this.info = info;
+    }
+
+    private InfoBean info;
     private String week;//这天是周几
     private String nongli;//这天的农历
+
 
 }

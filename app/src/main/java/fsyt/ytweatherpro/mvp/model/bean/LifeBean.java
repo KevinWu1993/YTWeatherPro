@@ -6,11 +6,11 @@ package fsyt.ytweatherpro.mvp.model.bean;
 public class LifeBean {
     private String date;//日期
 
-    public RealTimeBean getInfo() {
+    public RealtimeLifeInfoBean getInfo() {
         return info;
     }
 
-    public void setInfo(RealTimeBean info) {
+    public void setInfo(RealtimeLifeInfoBean info) {
         this.info = info;
     }
 
@@ -22,5 +22,5 @@ public class LifeBean {
         this.date = date;
     }
 
-    private RealTimeBean info;//生活指数的信息
+    private RealtimeLifeInfoBean info;//生活指数的信息
 }

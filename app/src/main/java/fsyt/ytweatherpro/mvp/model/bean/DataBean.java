@@ -31,6 +31,15 @@ public class DataBean {
         this.realtime = realtime;
     }
 
+    public Pm25Bean getPm25() {
+        return pm25;
+    }
+
+    public void setPm25(Pm25Bean pm25) {
+        this.pm25 = pm25;
+    }
+
+    private Pm25Bean pm25;
     private int date;
 
     public int getIsForeign() {

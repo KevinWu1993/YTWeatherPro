@@ -9,8 +9,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-
-import fsyt.ytweatherpro.gsonEntity.WeatherEntity;
+import fsyt.ytweatherpro.mvp.model.WeatherModel;
 
 import static org.junit.Assert.*;
 
@@ -33,8 +32,8 @@ public class ExampleUnitTest {
         String jsonStr=importStr();//导入要测试的数据
         System.out.println(jsonStr);
         Gson gson=new Gson();
-        WeatherEntity w=gson.fromJson(jsonStr,WeatherEntity.class);
-        System.out.println(w.result.data.pm25.pm25.pm10);
+        WeatherModel w=gson.fromJson(jsonStr,WeatherModel.class);
+        System.out.println(w.getResult().getData().getPm25().getPm25().getCurPm());
     }
 
     private String importStr(){

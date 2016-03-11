@@ -74,31 +74,21 @@ public class RealTimeBean {
         this.weather = weather;
     }
 
-    public RealtimeWindBean getWind() {
+    public RealTimeWindBean getWind() {
         return wind;
     }
 
-    public void setWind(RealtimeWindBean wind) {
+    public void setWind(RealTimeWindBean wind) {
         this.wind = wind;
     }
 
     private String moon;//农历、
     private long dataUptime;//更新时间戳
     private RealTimeWeatherBean weather;
-    private RealtimeWindBean wind;
+    private RealTimeWindBean wind;
 
-    static class RealtimeWindBean {
-        public String direct;//风向
-        public String power;//风力
-        public String offset;//风向偏移量
-        public String windspeed;//风速
-    }
 
-    static class RealTimeWeatherBean {
-        public String tempertrue;//实时温度
-        public String humidity;//湿度
-        public String info;//天气信息
-        public String img;//天气对应图片
-    }
+
+
 
 }
