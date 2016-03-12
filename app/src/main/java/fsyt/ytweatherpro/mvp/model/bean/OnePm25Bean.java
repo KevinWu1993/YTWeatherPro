@@ -5,7 +5,29 @@ package fsyt.ytweatherpro.mvp.model.bean;
  */
 public class OnePm25Bean {
     private String curPm;
+    private String pm25;
+    private String pm10;
+    private String level;//等级
+    private String quality;//质量
+    private String des;//描述
 
+    /**
+     *
+     * @param curPm
+     * @param pm25
+     * @param pm10
+     * @param level
+     * @param quality
+     * @param des
+     */
+    public OnePm25Bean(String curPm,String pm25,String pm10,String level,String quality,String des){
+        this.curPm=curPm;
+        this.pm25=pm25;
+        this.pm10=pm10;
+        this.level=level;
+        this.quality=quality;
+        this.des=des;
+    }
     public String getCurPm() {
         return curPm;
     }
@@ -54,9 +76,5 @@ public class OnePm25Bean {
         this.des = des;
     }
 
-    private String pm25;
-    private String pm10;
-    private String level;//等级
-    private String quality;//质量
-    private String des;//描述
+
 }

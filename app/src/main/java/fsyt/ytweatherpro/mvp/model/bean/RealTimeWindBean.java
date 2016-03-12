@@ -4,6 +4,17 @@ package fsyt.ytweatherpro.mvp.model.bean;
  * Created by KevinWu on 16-3-12.
  */
 public class RealTimeWindBean {
+    private String direct;//风向
+    private String power;//风力
+    private String offset;//风向偏移量
+    private String windspeed;//风速
+
+    public RealTimeWindBean(String direct,String power,String offset,String windspeed){
+        this.direct=direct;
+        this.power=power;
+        this.offset=offset;
+        this.windspeed=windspeed;
+    }
     public String getDirect() {
         return direct;
     }
@@ -36,8 +47,5 @@ public class RealTimeWindBean {
         this.windspeed = windspeed;
     }
 
-    private String direct;//风向
-    private String power;//风力
-    private String offset;//风向偏移量
-    private String windspeed;//风速
+
 }

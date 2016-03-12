@@ -7,7 +7,16 @@ import java.util.ArrayList;
  */
 public class ADayWeatherBean {
     private String date;//日期
+    private InfoBean info;
+    private String week;//这天是周几
+    private String nongli;//这天的农历
 
+    public ADayWeatherBean(String date, ArrayList<String> day, ArrayList<String> night, String week, String nongli) {
+        this.date = date;
+        this.info = new InfoBean(day, night);
+        this.week = week;
+        this.nongli = nongli;
+    }
 
     public String getDate() {
         return date;
@@ -16,7 +25,6 @@ public class ADayWeatherBean {
     public void setDate(String date) {
         this.date = date;
     }
-
 
 
     public String getWeek() {
@@ -42,10 +50,6 @@ public class ADayWeatherBean {
     public void setInfoBean(InfoBean info) {
         this.info = info;
     }
-
-    private InfoBean info;
-    private String week;//这天是周几
-    private String nongli;//这天的农历
 
 
 }

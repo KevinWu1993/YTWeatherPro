@@ -6,6 +6,15 @@ package fsyt.ytweatherpro.mvp.model.bean;
 public class RealTimeWeatherBean {
     private String tempertrue;//实时温度
     private String humidity;//湿度
+    private String info;//天气信息
+    private String img;//天气对应图片
+
+    public RealTimeWeatherBean(String tempertrue, String humidity, String info, String img) {
+        this.tempertrue = tempertrue;
+        this.humidity = humidity;
+        this.info = info;
+        this.img = img;
+    }
 
     public String getImg() {
         return img;
@@ -38,7 +47,4 @@ public class RealTimeWeatherBean {
     public void setInfo(String info) {
         this.info = info;
     }
-
-    private String info;//天气信息
-    private String img;//天气对应图片
 }

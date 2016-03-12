@@ -11,6 +11,12 @@ public class DataBean {
     private LifeBean life;
     private List<ADayWeatherBean> weather=new ArrayList<>();
 
+    public DataBean(RealTimeBean realtime,LifeBean life,List<ADayWeatherBean> weather){
+        this.realtime=realtime;
+        this.life=life;
+        this.weather=weather;
+    }
+
     public void setDate(int date) {
         this.date = date;
     }

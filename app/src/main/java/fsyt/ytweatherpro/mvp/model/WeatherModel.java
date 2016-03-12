@@ -1,38 +1,28 @@
 package fsyt.ytweatherpro.mvp.model;
 
-import fsyt.ytweatherpro.mvp.model.bean.ResultBean;
+import java.util.List;
+
+import fsyt.ytweatherpro.mvp.model.bean.ADayWeatherBean;
+import fsyt.ytweatherpro.mvp.model.bean.LifeBean;
+import fsyt.ytweatherpro.mvp.model.bean.Pm25Bean;
+import fsyt.ytweatherpro.mvp.model.bean.RealTimeBean;
+import fsyt.ytweatherpro.mvp.model.bean.WeatherBean;
 
 /**
- * Created by KevinWu on 16-3-11.
+ * Created by KevinWu on 16-3-12.
  */
 public class WeatherModel {
-    private String reason;
-    private ResultBean result;
+    private WeatherBean weatherBean;
+    private String cityCode;//城市代码，用于区分城市
+    private String cityName;//城市名
+    private RealTimeBean realTimeBean;//实时天气模块bean
+    private LifeBean lifeBean;//生活指数bean
+    private List<ADayWeatherBean> sevenDayWeatherList;//七天天气列表
+    private Pm25Bean pm25Bean;//pm2.5bean
 
-    public int getError_code() {
-        return error_code;
-    }
 
-    public void setError_code(int error_code) {
-        this.error_code = error_code;
-    }
 
-    public ResultBean getResult() {
-        return result;
-    }
 
-    public void setResult(ResultBean result) {
-        this.result = result;
-    }
 
-    public String getReason() {
-        return reason;
-    }
-
-    public void setReason(String reason) {
-        this.reason = reason;
-    }
-
-    private int error_code;
 
 }

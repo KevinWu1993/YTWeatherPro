@@ -6,6 +6,33 @@ package fsyt.ytweatherpro.mvp.model.bean;
 public class Pm25Bean {
     private String key;//城市拼音
     private int show_desc;//暂时也不知道是什么
+    private OnePm25Bean pm25;
+    private String datetime;//pm25数据更新时间
+    private String cityName;//城市名
+
+
+    /**
+     *
+     * @param key
+     * @param show_desc
+     * @param curPm
+     * @param pm25
+     * @param pm10
+     * @param level
+     * @param quality
+     * @param des
+     * @param datetime
+     * @param cityName
+     */
+    public Pm25Bean(String key, int show_desc, String curPm, String pm25,
+                    String pm10, String level, String quality, String des,
+                    String datetime, String cityName) {
+        this.key = key;
+        this.show_desc=show_desc;
+        this.pm25=new OnePm25Bean(curPm,pm25,pm10,level,quality,des);
+        this.cityName=cityName;
+        this.datetime=datetime;
+    }
 
     public String getCityName() {
         return cityName;
@@ -46,10 +73,6 @@ public class Pm25Bean {
     public void setKey(String key) {
         this.key = key;
     }
-
-    private OnePm25Bean pm25;
-    private String datetime;//pm25数据更新时间
-    private String cityName;//城市名
 
 
 }

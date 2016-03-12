@@ -9,6 +9,54 @@ public class RealTimeBean {
     private String date;//日期
     private String time;//更新时间
     private int week;//星期
+    private String moon;//农历、
+    private long dataUptime;//更新时间戳
+    private RealTimeWeatherBean weather;
+    private RealTimeWindBean wind;
+
+    /**
+     * 构造时同时完成相关bean的构造
+     * @param city_code
+     * @param city_name
+     * @param date
+     * @param time
+     * @param week
+     * @param moon
+     * @param dataUptime
+     * @param tempertrue
+     * @param humidity
+     * @param info
+     * @param img
+     * @param direct
+     * @param power
+     * @param offset
+     * @param windspeed
+     */
+    public RealTimeBean(String city_code,
+                        String city_name,
+                        String date,
+                        String time,
+                        int week,
+                        String moon,
+                        long dataUptime,
+                        String tempertrue,
+                        String humidity,
+                        String info,
+                        String img,
+                        String direct,
+                        String power,
+                        String offset,
+                        String windspeed) {
+        this.city_code = city_code;
+        this.city_name = city_name;
+        this.date = date;
+        this.time = time;
+        this.week = week;
+        this.moon = moon;
+        this.dataUptime = dataUptime;
+        this.weather = new RealTimeWeatherBean(tempertrue, humidity, info, img);
+        this.wind = new RealTimeWindBean(direct, power, offset, windspeed);
+    }
 
     public String getCity_code() {
         return city_code;
@@ -81,14 +129,6 @@ public class RealTimeBean {
     public void setWind(RealTimeWindBean wind) {
         this.wind = wind;
     }
-
-    private String moon;//农历、
-    private long dataUptime;//更新时间戳
-    private RealTimeWeatherBean weather;
-    private RealTimeWindBean wind;
-
-
-
 
 
 }
