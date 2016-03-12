@@ -1,6 +1,4 @@
-package fsyt.ytweatherpro.mvp.model.impl;
-
-import java.util.List;
+package fsyt.ytweatherpro.mvp.model;
 
 /**
  * Created by KevinWu on 16-3-12.

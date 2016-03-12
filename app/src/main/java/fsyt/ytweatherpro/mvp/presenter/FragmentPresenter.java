@@ -1,4 +1,4 @@
-package fsyt.ytweatherpro.mvp.presenter.impl;
+package fsyt.ytweatherpro.mvp.presenter;
 
 /**
  * Created by KevinWu on 16-2-25.

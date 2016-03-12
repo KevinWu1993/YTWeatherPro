@@ -1,12 +1,12 @@
 package fsyt.ytweatherpro.mvp.view.activity.base;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
+
+import fsyt.ytweatherpro.mvp.model.EventModel;
 
 /**
  * Created by KevinWu on 16-2-26.
@@ -18,7 +18,7 @@ public class BaseActivity extends AppCompatActivity{
         setCustomTheme();//设置主题
         Log.d(TAG,"onCreate");
         super.onCreate(savedInstanceState);
-//        EventBus.getDefault().register(this);//注册EventBus
+        EventBus.getDefault().register(this);//注册EventBus
         
     }
 
@@ -27,7 +27,7 @@ public class BaseActivity extends AppCompatActivity{
     }
 
     @Subscribe
-    public void onEventMainThread(){
+    public void onEventMainThread(EventModel eventModel){
 
     }
 }
