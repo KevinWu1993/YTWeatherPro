@@ -1,6 +1,8 @@
 package fsyt.ytweatherpro.mvp.presenter.impl;
 
+import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Toolbar;
 
 /**
  * Created by KevinWu on 16-2-25.
@@ -18,5 +20,7 @@ public interface ActivityPresenter {
     void onStop();
 
     void onDestroy();
+
+    void buildToolbar(Activity activity, Toolbar toolbar);
 
 }

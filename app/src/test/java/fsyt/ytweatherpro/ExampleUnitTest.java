@@ -11,6 +11,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import fsyt.ytweatherpro.mvp.model.bean.RealTimeWindBean;
+import fsyt.ytweatherpro.mvp.model.bean.WeatherBean;
 
 import static org.junit.Assert.*;
 
@@ -33,7 +34,7 @@ public class ExampleUnitTest {
         String jsonStr=importStr();//导入要测试的数据
         System.out.println(jsonStr);
         Gson gson=new Gson();
-        RealTimeWindBean.WeatherBean w=gson.fromJson(jsonStr,RealTimeWindBean.WeatherBean.class);
+        WeatherBean w=gson.fromJson(jsonStr,WeatherBean.class);
         System.out.println(w.getResult().getData().getPm25().getPm25().getCurPm());
     }
 
