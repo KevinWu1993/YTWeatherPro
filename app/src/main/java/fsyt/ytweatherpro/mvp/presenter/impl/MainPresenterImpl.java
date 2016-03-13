@@ -1,9 +1,7 @@
 package fsyt.ytweatherpro.mvp.presenter.impl;
 
 import android.app.Activity;
-import android.os.Bundle;
-import android.widget.Toolbar;
-
+import android.support.v7.widget.Toolbar;
 import fsyt.ytweatherpro.mvp.model.impl.WeatherModel;
 import fsyt.ytweatherpro.mvp.presenter.ActivityPresenter;
 import fsyt.ytweatherpro.mvp.view.MainView;
@@ -20,8 +18,11 @@ public class MainPresenterImpl implements ActivityPresenter{
         this.mainView=mainView;
     }
 
+
     @Override
     public void buildToolbar(Activity activity, Toolbar toolbar) {
 
     }
+
+
 }

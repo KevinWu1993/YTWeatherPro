@@ -22,10 +22,9 @@ public class MainActivity extends BaseActivity implements MainView{
         super.onCreate(savedInstanceState);
         Log.d(TAG,"onCreate");
         setContentView(R.layout.activity_main);
+        setToolbar();
         mainPresenter=new MainPresenterImpl(this);
         mainPresenter.buildToolbar(this,toolbar);
-//        setToolbar();
-//        setTitle("test");
     }
 
     @Override

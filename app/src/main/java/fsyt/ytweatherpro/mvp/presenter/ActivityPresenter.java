@@ -10,4 +10,6 @@ public interface ActivityPresenter {
 
     void buildToolbar(Activity activity, Toolbar toolbar);
 
+    void buildMenu();
+
 }
