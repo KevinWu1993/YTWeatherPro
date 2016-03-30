@@ -31,6 +31,8 @@ public class MainActivity extends BaseActivity implements MainView{
     public void setToolbar() {
         toolbar=(Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        //仅测试用
+        getSupportActionBar().setTitle("南昌");
     }
 
     @Override
@@ -38,10 +40,6 @@ public class MainActivity extends BaseActivity implements MainView{
         getSupportActionBar().setTitle(title);
     }
 
-    @Override
-    public void setMenu() {
-
-    }
 
     @Override
     public void setFragment() {

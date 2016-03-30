@@ -24,5 +24,10 @@ public class MainPresenterImpl implements ActivityPresenter{
 
     }
 
+    @Override
+    public void buildMenu() {
+
+    }
+
 
 }

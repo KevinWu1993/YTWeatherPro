@@ -7,6 +7,5 @@ public interface MainView {
 
     void setToolbar();
     void setTitle(String title);
-    void setMenu();
     void setFragment();
 }
