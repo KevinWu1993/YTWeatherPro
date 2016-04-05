@@ -35,10 +35,17 @@ public class WeatherFragment extends Fragment implements WeatherInfoView{
         return parentView;
     }
 
+
+    /**
+     * 导入设置内容
+     */
     private void loadConfig() {
 
     }
 
+    /**
+     * 初始化
+     */
     private void init() {
     }
 
@@ -62,7 +69,7 @@ public class WeatherFragment extends Fragment implements WeatherInfoView{
 
     @Override
     public void onDataRefresh() {
-        
+
     }
 
     @Override
